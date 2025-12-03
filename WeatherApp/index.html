@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="bg-gray-300 font-RobotoCondensed px-5">
+    <header class="flex flex-row w-full justify-center items-center py-5 guia">
+      <a href="" class="mr-5">
+        <img class="w-16 h-16" src="cloud.svg" alt="logo" />
+      </a>
+      <h1 class="font-bold text-[40px]">Weather App</h1>
+    </header>
+
+    <div class="guia mt-5 flex flex-col items-center">
+      <input
+        id="searchBar"
+        type="text"
+        placeholder="Search city here"
+        class="appearance-none outline-none placeholder:text-center py-3 rounded-xl shadow-lg text-sm w-[200px] mb-[32px] text-center"
+      />
+
+      <main
+        id="main"
+        class="guia w-full flex flex-col items-center py-10 rounded-3xl shadow-lg bg-white/30 backdrop-blur-md h-[364px] relative max-w-[400px]"
+      >
+        <h2 id="city" class="font-[500] text-3xl"></h2>
+        <p id="date" class="text-gray-500 mt-[16px]"></p>
+        <p id="temp" class="font-bold text-7xl my-[32px]"></p>
+        <img
+          id="world"
+          class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[150px] animate-none"
+          src="earth.png"
+          alt=""
+        />
+        <p id="description" class="font-bold text-xl mb-[16px]"></p>
+        <p id="humidity" class="font-bold text-xl"></p>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
+<!-- 
+header
+
+input:text
+
+city.name
+
+date dd/mm/yyyy
+
+temperatura
+
+broken cloud
+
+humidity
+
+
+-->
