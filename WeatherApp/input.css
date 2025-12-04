@@ -8,3 +8,45 @@
   border-width: 2px;
   border-color: black;
 }
+
+@keyframes shake-x {
+  0%,
+  100% {
+    transform: translateX(0); /* Centrado */
+  }
+  20%,
+  60% {
+    transform: translateX(-8px); /* Izquierda */
+  }
+  40%,
+  80% {
+    transform: translateX(8px); /* Derecha */
+  }
+}
+
+.animation-error {
+  animation: shake-x 0.1s ease-in-out;
+}
+
+.errorBorder {
+  border-width: 2px;
+  border-color: rgb(255, 137, 137);
+  color: rgb(255, 137, 137);
+}
+
+@keyframes floatGlobal {
+  0%,
+  100% {
+    /* Subida: Centrado + 8px hacia arriba */
+    transform: translate(-50%, -50%) translateY(-8px);
+  }
+  50% {
+    /* Bajada: Centrado + 8px hacia abajo */
+    transform: translate(-50%, -50%) translateY(8px);
+  }
+}
+
+.world {
+  /* Duración corta, y opcionalmente, repítela 3 veces para hacerla evidente */
+  animation: floatGlobal 3s ease-in-out infinite;
+}
