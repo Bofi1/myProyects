@@ -6,7 +6,7 @@ searchBar.addEventListener("keydown", (event) => {
   }
 });
 
-let url = "http://api.openweathermap.org/data/2.5/weather?q=";
+let url = "https://api.openweathermap.org/data/2.5/weather?q=";
 let key = "b3a06a3c64c82b438ac9b0b5c93fa703";
 
 function getWeatherApi() {
